@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "node_modules/.bin/mocha --require @babel/register --require react-native-mock-render/mock __tests__/**.tsx"
+    "test": "node_modules/.bin/mocha --require ./babel-register.js --require react-native-mock-render/mock tests/**.test.tsx"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -32,6 +32,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "jest": "^24.9.0",
+    "mem": "^6.0.1",
     "metro-react-native-babel-preset": "^0.56.0",
     "mobx": "^5.15.0",
     "mobx-react": "^6.1.4",
